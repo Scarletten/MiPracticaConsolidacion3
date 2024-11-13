@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./assets/css/estilos.css">
+    <link rel="stylesheet" href="./assets/css/cssBootstrap/bootstrap.min.css">
+</head>
+<body class="bg-body-tertiary" onload="asignarEventos()">
+    <!-- BARRA DE NAVEGACION -->
+    <div class="container">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+            
+            <a class="navbar-brand" href="#">
+                <!-- <img src="./assets/img/pumpkin.svg" alt="Bootstrap" width="50" height="70"> -->
+                 <div class='contenedorSvg'>
+                    <?xml version="1.0" encoding="UTF-8"?>
+                    <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48">
+                    <defs>
+                        <style>
+                        .cls-1 {
+                            fill: #000;
+                            stroke-width: 0px;
+                        }
+                        </style>
+                    </defs>
+                    <path class="originalIcono" class="cls-1" d="M45.673,36.505L28.33,6.498c-.904-1.564-2.522-2.498-4.33-2.498s-3.426.934-4.33,2.498L2.327,36.506c-.903,1.563-.903,3.43,0,4.994.903,1.565,2.522,2.5,4.331,2.5h34.686c1.809,0,3.428-.935,4.331-2.5.902-1.564.902-3.431,0-4.995ZM27.923,23.073l-3.945,9.323h1.759c.447,0,.669.541.352.855l-4.655,4.604c-.257.254-.691.16-.819-.178l-1.746-4.604c-.124-.327.118-.677.468-.677h1.434l1.544-6.918h-2.727c-.354,0-.605-.345-.496-.682l3.372-10.435c.07-.215.27-.361.496-.361h3.077c.354,0,.605.345.496.682l-2.477,7.666h3.387c.374,0,.626.381.48.725Z"/>
+                    </svg>
+                </div>
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Principal</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./preguntas.html">Preguntas</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./manuales.html">Manuales</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./noticias.html">Noticias</a>
+                </li>              <li class="nav-item">
+                    <a class="nav-link" href="./calendario.html">Calendario</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./adm.html">Administración</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./organ.html">Organinagrama</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./chat.html">Chat</a>
+                </li> 
+                </ul>
+                <form class="d-flex" role="search">
+                <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+                <button class="btn btn-outline-success" type="submit">Buscar</button>
+                </form>
+            </div>
+            </div>
+        </nav>
+    </div>
+    <!-- FIN BARRA DE NAVEGACION -->
+     <!-- CONTACTOS -->
+    <main class="container bg-body-tertiary">
+        <div class="row ">
+            <aside class="col-xs-12 col-md-4 d-none d-md-block">
+                <div class="container">
+                    <div class="row">
+
+                        <!-- * DISEÑO DE 3 COLUMNAS PROPIO-->
+                        <h5>Contactos</h5>
+                        <div id="contenedorContacto" class="col-xs-12 m-1">
+                            
+                            <div class="container" id="divSinLeer">
+                                <div class="row">
+                                    <div class="col-xs-12 col-md-3">
+                                        <figure>
+                                            <img class="img-fluid" src="./assets/img/hanamichi.jpg" alt="Sakuragi">
+                                        </figure>
+                                    </div>
+                                    <div id="nombreContacto" class="col-xs-12 col-md-6">
+                                        <p class="sinLeer">Hanamichi Sakuragi</p>
+                                    </div>
+                                    <div id="contenedorHora" class="col-xs-12 col-md-3">
+                                        <span class="sinLeer" id="horaActual"></span>
+                                    </div>
+
+                                </div>
+
+                            </div>
+                        </div>
+                        <!-- * FIN DISEÑO DE 3 COLUMNAS PROPIO-->
+                        <!-- * DISEÑO DE 3 COLUMNAS PROPIO-->
+                        <div id="contenedorContacto" class="col-xs-12 m-1">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-xs-12 col-md-3">
+                                        <figure>
+                                            <img class="img-fluid" src="./assets/img/mitsui.jpg" alt="Mitsui">
+                                        </figure>
+                                    </div>
+                                    <div id="nombreContacto" class="col-xs-12 col-md-6">
+                                        <p>Hisashi Mitsui</p>
+                                    </div>
+                                    <div id="contenedorHora" class="col-xs-12 col-md-3">
+                                        <p> Ayer </p>
+                                    </div>
+
+                                </div>
+
+                            </div>
+                        </div>
+                        <!-- * FIN DISEÑO DE 3 COLUMNAS PROPIO-->
+                                                 <!-- * DISEÑO DE 3 COLUMNAS PROPIO-->
+                        <div id="contenedorContacto" class="col-xs-12 m-1">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-xs-12 col-md-3">
+                                        <figure>
+                                            <img class="img-fluid" src="./assets/img/miyagi.jpg" alt="Miyagi">
+                                        </figure>
+                                    </div>
+                                    <div id="nombreContacto" class="col-xs-12 col-md-6">
+                                        <p>Ryota Miyagi</p>
+                                    </div>
+                                    <div id="contenedorHora" class="col-xs-12 col-md-3">
+                                        <p> Ayer </p>
+                                    </div>
+
+                                </div>
+
+                            </div>
+                        </div>
+                        <!-- * FIN DISEÑO DE 3 COLUMNAS PROPIO-->
+                                                 <!-- * DISEÑO DE 3 COLUMNAS PROPIO-->
+                        <div id="contenedorContacto" class="col-xs-12 m-1">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-xs-12 col-md-3">
+                                        <figure>
+                                            <img class="img-fluid" src="./assets/img/akagi.jpg" alt="Akagi">
+                                        </figure>
+                                    </div>
+                                    <div id="nombreContacto" class="col-xs-12 col-md-6">
+                                        <p>Takenori Akagi</p>
+                                    </div>
+                                    <div id="contenedorHora" class="col-xs-12 col-md-3">
+                                        <p> Ayer </p>
+                                    </div>
+
+                                </div>
+
+                            </div>
+                        </div>
+                        <!-- * FIN DISEÑO DE 3 COLUMNAS PROPIO-->
+                                                 <!-- * DISEÑO DE 3 COLUMNAS PROPIO-->
+                        <div id="contenedorContacto" class="col-xs-12 m-1">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-xs-12 col-md-3">
+                                        <figure>
+                                            <img class="img-fluid" src="./assets/img/rukawa.jpg" alt="Rukawa">
+                                        </figure>
+                                    </div>
+                                    <div id="nombreContacto" class="col-xs-12 col-md-6">
+                                        <p>Kaede Rukawa</p>
+                                    </div>
+                                    <div id="contenedorHora" class="col-xs-12 col-md-3">
+                                        <p> Ayer </p>
+                                    </div>
+
+                                </div>
+
+                            </div>
+                        </div>
+                        <!-- * FIN DISEÑO DE 3 COLUMNAS PROPIO-->
+                         
+                    </div>
+
+                </div>
+
+            </aside>
+            <article class="col-xs-12 col-md-8">
+                <div class="container">
+                    <div class="row">
+                        <div id="nombrePrincipal" class="col-xs-12">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-xs-12 col-md-2">
+                                        <figure>
+                                            <img  class="rounded-circle mr-2"  src="assets/img/hanamichi.jpg" alt="Sakuragi">
+                                        </figure>
+                                    </div>
+                                    <div class="col-xs-12 col-md-8">
+                                        <h4>Hanamichi Sakuragi</h4>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- FIN CONTACTOS -->
+
+                        <!--* INICIO CHAT CENTRAL -->
+                        <div id= "contenedorMensajeria" class="col-xs-12">
+                            <div id="chatCentral">
+                                <div class="contenedorEnviado">
+                                    <div class="enviado">
+                                        <p>Hola, cómo estás?</p>
+                                    </div>
+                                </div>
+                                <div class="contenedorRecibido">
+                                    <div class="recibido">
+                                        <p>Bien, y tú?</p>
+                                    </div>
+                                </div>
+                                <div class="contenedorEnviado">
+                                    <div class="enviado">
+                                        <p>Bien, gracias!! ¿Dónde estás viviendo?</p>
+                                    </div>
+                                </div>
+                                <div class="contenedorRecibido">
+                                    <div class="recibido">
+                                        <p>Estoy viviendo en Chile</p>
+                                    </div>
+                                </div>
+                                <div class="contenedorEnviado">
+                                    <div class="contenedorEnviado" id="contenedorMensajeEnviado">
+                                        <p class="enviado" id="mensajeEnviado"></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="container">
+                                <div class="row">
+
+                                    <div id="contenedorEnviar" class="col-xs-12 col-md-9">
+                                        <button class="btn btn-outline-info d-block d-md-none">Ver</button>
+                                        <form action="">
+                                            <input type="text" id="txtMensaje" placeholder="Escribe un mensaje">
+                                            <input id= "btnEnviar" type="button" value="Enviar">
+                                        </form>
+                                    </div>
+                                    <div class="btn-group col-xs-12 col-md-3">
+                                        <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                                            Adjuntar
+                                        </button>
+                                        <ul class="dropdown-menu">
+                                            <li><a class="dropdown-item" href="#">Imagen</a></li>
+                                            <li><a class="dropdown-item" href="#">Video</a></li>
+                                            <li><a class="dropdown-item" href="#">Documento</a></li>
+                                            <li><hr class="dropdown-divider"></li>
+                                            <li><a class="dropdown-item" href="#">Sonido</a></li>
+                                        </ul>
+                                    </div>
+                                    
+                                </div>
+
+
+
+
+                            </div>
+
+                        
+                        </div>
+                        <!--* FIN CHAT CENTRAL -->
+
+                    </div>
+
+                </div>
+    
+            </article>
+        </div>
+
+    </main>
+
+
+    <script src="./assets/js/jsBootstrap/bootstrap.bundle.min.js"></script>
+    <script src="./assets/js/js/logica.js"></script>
+</body>
+</html>
