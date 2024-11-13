@@ -1,0 +1,110 @@
+
+figure{
+    width: auto; 
+}
+
+img{
+    max-width: 50%;
+    border-radius: 100%;
+}
+
+
+#nombrePrincipal{
+    background-color: #e8e8ec;
+    padding-block-start: 2%;
+    border-bottom: solid 2px rgb(157, 159, 160);
+}
+
+#contenedorContacto{
+    background-color: #e8e8ec;
+    border-radius: 10px;
+    padding-block: 2%;
+}
+
+#nombreContacto {
+    align-content: center;
+}
+
+.sinLeer{
+    font-weight: bold;
+}
+
+#contenedorHora{
+    align-content: center;
+}
+
+#txtMensaje {
+    border: none;
+    width: 80%;
+}
+
+#contenedorMensajeria{
+    padding-block: 3%;
+    background-color: #e8e8ec;
+}
+
+#chatCentral{
+    padding-block-end: 20%;
+}
+
+
+.contenedorEnviado{
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.contenedorRecibido{
+    display: flex;
+    flex-direction: row;
+}
+
+.enviado{
+    background-color: #7770cc;
+    color: white;
+    border-radius: 10px;
+    padding-inline: 10px;
+    padding-block-start: 10px;
+
+}
+
+.recibido{
+    background-color: whitesmoke;
+    border-radius: 10px;
+    padding-inline: 10px;
+    padding-block-start: 10px;
+}
+
+#contenedorMensajeEnviado{
+    display: none;
+}
+
+#contenedorEnviar{
+    background-color: white;
+    padding-block: 2%;
+    padding-inline: 4%;
+    border-radius: 20px;
+    border: 2px solid #e8e8ec;
+}
+
+#btnEnviar{
+    border-radius: 10px;
+    padding-inline: 2%;
+    padding-block: 1%;
+    border: none;
+}
+
+
+.contenedorSvg{
+    width: 50px;
+    background-color: black;
+}
+
+.originalIcono{
+    fill: orange;
+}
+
+@media screen and (min-width: 576px) {
+    .contenedorSvg {
+        background-color: red;
+    }
+}
